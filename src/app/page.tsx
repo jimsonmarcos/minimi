@@ -98,11 +98,11 @@ export default function Home() {
   return (
     <div className="flex justify-center min-h-screen p-10">
       <div className="md:max-w-3xl w-full ">
-        <div className="flex justify-between">
+        <div className="md:flex justify-between">
           <h4 className="font-semibold text-3xl">Companies</h4>
 
           <div className="flex gap-x-3">
-            {selectedCompanies !== null && (
+            {selectedCompanies !== null && selectedCompanies.length > 0 && (
               <Button
                 label={`Delete Selected ${selectedCompanies.length}`}
                 className="button"
